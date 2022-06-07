@@ -217,18 +217,6 @@ class _MainScreenState extends State<MainScreen> {
                                                         : Colors.white)),
                                         IconButton(
                                             onPressed: () async {
-                                              // DocumentSnapshot document =
-                                              //     await FirebaseFirestore
-                                              //         .instance
-                                              //         .collection('quotes')
-                                              //         .doc(snapshot
-                                              //             .data!.docs.last.id)
-                                              //         .collection("Fav")
-                                              //         .doc(user?.uid)
-                                              //         .get();
-
-                                              // print(document["status"]);
-
                                               await Share.share(myquotetext);
                                               // FirebaseFirestore.instance
                                               //     .collection('quotes')
